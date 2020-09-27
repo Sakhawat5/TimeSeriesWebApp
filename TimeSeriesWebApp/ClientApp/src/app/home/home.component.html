@@ -1,0 +1,60 @@
+
+<style>
+  @media (min-width: 768px) {
+    .filter-first {
+      float: none;
+    }
+  }
+  @media (min-width: 992px) and (max-width: 1200px) {
+
+    .button-style {
+      padding-top: 30px;
+    }
+  }
+  @media (min-width: 992px) {
+    .filter-first {
+      float: left;
+    }
+    .filter-second {
+      float: left;
+    }
+
+    .select-level {
+      margin-left: 0rem;
+    }
+  }
+  @media (min-width: 1200px) {
+    .filter-first {
+      float: left;
+    }
+    .filter-second {
+      float: left;
+    }
+
+  }
+</style>
+<div class="main">
+  <div class="top-search">
+    <div class="filter-first">
+      <label>Building:</label>
+      <input type="text" placeholder="SELECT BUILDING" />
+      <span class="ml-2">Object:</span>
+      <input type="text" name="object" placeholder="SELECT OBJECT" />
+    </div>
+    <div class="filter-second">
+      <span class="select-level">Datafield:</span>
+      <input type="text" name="datafield" placeholder="SELECT DATAFIELD" />
+      <span class="ml-2">Daterange:</span>
+      <input type="text" name="datafield" placeholder="2017/04/03 12:00 AM 2017/04/03 11:57 PM " />
+
+    </div>
+    <div class="button-style">
+      <button type="submit" class="btn btn-primary ml-4" name="search">Search</button>
+    </div>
+    <hr />
+  </div>
+  <div class="card">
+    <div id="chartContainer" style="height: 370px; width: 100%; margin-left:auto;margin-right:auto;"></div>
+  </div>
+
+</div>
